@@ -11,7 +11,7 @@ services:
    volumes :
      - /home/mysql/data:/var/lib/mysql
 
-  achatproject: 
+  achat: 
    image: ahmedsaidi1998/ahmedback:1.0.0
    container_name: achat
    restart: on-failure
@@ -20,10 +20,4 @@ services:
    depends_on:
     - mysqldb
     
-  angular:
-   image: ahmedsaidi1998/adam_front:latest
-   container_name: angularcontainer  
-   ports: 
-    - 4200:3000
-   depends_on:
-    - achatproject
+  
