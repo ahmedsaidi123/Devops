@@ -11,7 +11,7 @@ services:
    volumes :
      - /home/mysql/data:/var/lib/mysql
 
-  achat: 
+  achatproject: 
    image: ahmedsaidi1998/ahmedback:1.0.0
    container_name: achat
    restart: on-failure
